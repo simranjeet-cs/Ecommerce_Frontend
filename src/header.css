@@ -1,0 +1,58 @@
+/* Header container styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Logout button styles */
+.logout-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  background-color: #ff4733;
+}
+
+/* Home link styles */
+.home-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+/* Login and Register button styles */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.login-button,
+.register-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #0056b3;
+}

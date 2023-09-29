@@ -1,0 +1,61 @@
+/* CSS for ProductList component with dark boundary */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  height: 17vh;
+  width:10vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0 1 calc(25% - 20px); /* Four cards per row with spacing */
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #333;
+  
+  
+}
+
+/* Add styling for the card content */
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Style the "Add to Cart" button */
+.product-card button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card button:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Add media queries for responsiveness if needed */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 0 1 calc(100% - 20px); /* One card per row on mobile screens */
+  }
+}
